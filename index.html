@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,17 +9,20 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="icon" href="images/INSFC-Logo.jpeg" sizes="16x16" type="image/png">
         <link rel="stylesheet" href="style.css">
+        <script src="https://kit.fontawesome.com/9860df61a3.js" crossorigin="anonymous"></script>
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     </head>
+
     <body>
         <main>
-            <div class="overlay-main">
+            <section id="overlay-main">
                 <header>
                     <div class="nav--links">
-                        <p><a href="">home</a></p>
-                        <p><a href="">about</a></p>
-                        <p><a href="">team</a></p>
-                        <p><a href="">Fixtures</a></p>
-                        <p><a href="mailto:inspirationfootballclub@gmail.com" target="_blank">contact</a></p>
+                        <p><a href="#">home</a></p>
+                        <p><a href="#aboutus">about</a></p>
+                        <p><a href="#teams">team</a></p>
+                        <p><a href="" target="_blank">Fixtures</a></p>
+                        <p><a href="#contact">contact</a></p>
                     </div>
                 </header>
 
@@ -27,14 +31,101 @@
                     <h1 class="welcome">Welcome to INSPIRATION FOOTBALL CLUB</h1>
                     <p class="bring">...bringing out the best in you</p>
                     <div class="btns">
-                        <p class="btn-register"><a href="https://forms.gle/rj8vQNH3QQp3vb748" target="_blank">register here</a></p>
+                        <p class="btn-register"><a href="https://forms.gle/BQ662WE5XzQmkHyK9" target="_blank">register
+                                here</a></p>
                         <p class="btn-soon"><a href="">coming soon</a></p>
                     </div>
                 </div>
-            </div>
-
+                <a href="#"><i class="fas fa-angle-double-up"></i></a>
+            </section>
         </main>
+        <article>
+            <section id="aboutus">
+                <div class="aboutus-text" data-aos="fade-left"
+                data-aos-offset="300"
+                data-aos-easing="ease-in-sine" data-aos-duration="2000">
+                    <h2 class="about">Who we are </h2>
+                    <p class="sometext">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis adipisci illum laudantium
+                        voluptates pariatur dolorum vitae atque et in minus est laboriosam officia voluptatem molestias
+                        ducimus iste rerum, quos ut numquam. A quibusdam neque ad non, ipsa corporis laboriosam eligendi
+                        maiores autem illo consectetur reprehenderit pariatur tempore. Rerum, iste mollitia.
+                    </p>
+                    <h3 class="values">Our core values</h3>
+                    <p class="sometext">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum, neque veniam quo aperiam saepe
+                        voluptatem dolorum consequatur facere vero distinctio aspernatur commodi quae ex vitae
+                        voluptates accusantium nesciunt obcaecati? At voluptas quae cum non.
+                    </p>
+                    <div class="btnmore">
+                        <p class="btn-readmore"><a href="">read more</a></p>
+                    </div>
+                </div>
+            </section>
 
+            <section id="teams">
+                <h2 class="our">our team gallery</h2>
+                <p class="sometextz">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum aut repellendus
+                    architecto totam mollitia numquam voluptate adipisci enim nobis laudantium.</p>
+                <div class="team-gallery">
+                    <div class="gallery-pic1" data-aos="flip-down" data-aos-duration="1200"></div>
+                    <div class="gallery-pic2" data-aos="flip-down" data-aos-duration="1500"></div>
+                    <div class="gallery-pic3" data-aos="flip-down" data-aos-duration="1700"></div>
+                    <div class="gallery-pic4" data-aos="flip-down" data-aos-duration="2000"></div>
+                    <div class="gallery-pic5" data-aos="flip-up" data-aos-duration="2200"></div>
+                    <div class="gallery-pic6" data-aos="flip-up" data-aos-duration="2500"></div>
+                    <div class="gallery-pic7" data-aos="flip-up" data-aos-duration="2700"></div>
+                    <div class="gallery-pic8" data-aos="flip-up" data-aos-duration="3000"></div>
+                </div>
+            </section>
+
+            <section id="contact">
+                <div class="contact-details">
+                    <div class="forms">
+                        <form name="contact" netlify>
+                            <p class="cont" for="contact details">Contact Us</p>
+                            <br>
+                            <input type="text" name="name" id="" placeholder="Full name">
+                            <br>
+                            <input type="email" name="email" id="" placeholder="Email">
+                            <br>
+                            <textarea name="message" id="" cols="30" rows="8" placeholder="Message"></textarea>
+                            <div class="btnsend">
+                                <p class="send"><a href="">send</a></p>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="contact-text">
+                        <div class="text-cont">
+                            <p class="conta">Contact Us</p>
+                            <div>
+                                <p class="info"><i class="fas fa-map-marker-alt"></i>123, African church, ifako-ijaiye
+                                    Ogba Lagos state</p>
+                                <p class="info"><i class="fas fa-phone"></i>+234 123 456 7890</p>
+                                <p class="info"><i class="far fa-envelope"></i>inspirationfootballclub@gmail.com</p>
+                            </div>
+                        </div>
+                        <div class="text-cont">
+                            <div class="footerlogo"></div>
+                            <p class="lorem">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates
+                                excepturi asperiores consequatur perferendis vero officiis veniam omnis. Sunt,
+                                consequuntur dolorum?</p>
+                            <br><br><br>
+                            <p class="copyright">Desgined with love by <a href="https://www.twitter.com/iamMajordonlass"
+                                    target="_blank">Dharmyx</a></p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+        </article>
+
+        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+
+        <script>
+            AOS.init();
+        </script>
         <!--<script src="" async defer></script>-->
     </body>
+
 </html>

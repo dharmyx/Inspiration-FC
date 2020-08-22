@@ -2,6 +2,11 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Mulish:wght@300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&display=swap');
+
+html {
+    scroll-behavior: smooth;
+}
 
 * {
     box-sizing: border-box;
@@ -9,28 +14,26 @@
     margin: 0;
 }
 
-body {
+main {
+    height: auto;
+    margin: auto;
     border: 1px solid;
     background-image: url(images/INS_bgedit.jpg);
     background-position: center bottom;
     background-repeat: no-repeat;
     background-size: cover;
 }
-
-main {
-    height: auto;
-    margin: auto;
-    border: 1px solid;
-}
-div.overlay-main {
+section#overlay-main {
     height: 100vh;
     background-color: rgb(4, 59, 36, .5);
 }
 header {
-    max-width: 85%;
+    width: 100%;
+    position: fixed;
     margin: auto;
     display: flex;
     justify-content: center;
+    background-color:  rgb(4, 59, 36, .2);
 }
 div.nav--links {
     display: flex;
@@ -49,7 +52,7 @@ div.nav--links > p > a {
 }
 div.landing-text {
     margin: auto;
-    padding: 2rem 0;
+    padding: 4rem 0;
     width: fit-content;
 }
 div.main-logo {
@@ -63,7 +66,7 @@ div.main-logo {
     background-size: cover;
 }
 h1.welcome {
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Montserrat', sans-serif;
     padding: 1rem 0;
     font-size: 2.4rem;
     font-weight: 600;
@@ -72,7 +75,7 @@ h1.welcome {
 }
 p.bring {
     font-family: 'Poppins', sans-serif;
-    font-size: 1.2rem;
+    font-size: 1rem;
     font-weight: 300;
     text-align: center;
     color: #ffffff;
@@ -110,11 +113,296 @@ p.btn-soon > a:hover {
     background-color: #f2f8fa;
     transition: all 1s ease;
 }
+.fa-angle-double-up {
+    position: fixed;
+    right: 50px;
+    bottom: 10px;
+    color: rgb(242, 248, 250);
+    font-size: 2.5rem;
+}
+section#aboutus {
+    height: auto;
+    padding: 3rem 0;
+    background-color: rgb(207,227,203, .5);
+}
+div.aboutus-text {
+    border: 1px dashed;
+    width: 60%;
+    margin: auto;
+    padding: 1rem 0;
+}
+h2.about {
+    text-align: center;
+    padding: 1.5rem 1rem;
+    font-size: 2.5rem;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+h3.values {
+    text-align: center;
+    padding: 1rem;
+    font-size: 1.7rem;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+p.sometext {
+    text-align: center;
+    padding: 1rem 2rem;
+    font-size: .9rem;
+    font-family: 'Montserrat', sans-serif;
+    line-height: 25px;
+}
+div.btnmore {
+    margin: 2rem auto;
+    width: fit-content;
+}
+p.btn-readmore > a {
+    color: #000000;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: 'Poppins', sans-serif;
+    letter-spacing: 4px;
+    border: 2px solid #000000;
+    padding: .7rem 1rem;
+}
+p.btn-readmore > a:hover {
+    border: 2px solid #043b24;
+    color: #ffffff;
+    background-color: #043b24;
+    transition: all .8s ease;
+}
+section#teams {
+    height: auto;
+    padding: 3rem 0;
+    background-color: #043b24;
+}
+h2.our {
+    text-align: center;
+    padding: 1rem 0;
+    font-size: 2rem;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    text-transform: uppercase;
+    color: #f2f8fa;
+}
+p.sometextz {
+    color: #f2f8fa;
+    width: 40%;
+    margin: auto;
+    text-align: center;
+    padding: 1.5rem 0;
+    font-size: .9rem;
+    font-family: 'Montserrat', sans-serif;
+    line-height: 25px;
+}
+div.team-gallery {
+    height: 500px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-areas: 
+    "a b c d"
+    "e f g h";
+}
+div.gallery-pic1 {
+    grid-area: a;
+    background-image: url(images/bg-07.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+div.gallery-pic2 {
+    grid-area: b;
+    background-image: url(images/bg-01.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+div.gallery-pic3 {
+    grid-area: c;
+    background-image: url(images/header-bg.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+div.gallery-pic4 {
+    grid-area: d;
+    background-image: url(images/bg-06.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+div.gallery-pic5 {
+    grid-area: e;
+    background-image: url(images/bg-01.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+div.gallery-pic6 {
+    grid-area: f;
+    background-image: url(images/bg-02.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+div.gallery-pic7 {
+    grid-area: g;
+    background-image: url(images/bg-04.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+div.gallery-pic8 {
+    grid-area: h;
+    background-image: url(images/bg-05.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
 
-@media (max-width: 425px) {
-    header {
-        max-width: 90%;
+section#contact {
+    height: auto;
+    background-color: #043b24;
+}
+div.contact-details {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(auto);
+    grid-template-areas: auto;
+    gap: 50px;
+}
+div.forms {
+    width: 100%;
+    margin: auto;
+    background-color: rgb(207,227,203, .7);
+}
+form {
+    margin: 3rem;
+    padding: 1.5rem 0;
+}
+p.cont {
+    padding: 1rem;
+    font-family: 'Montserrat', sans-serif;
+    background-color: #043b24;
+    color: #ffffff;
+}
+input[type=text],
+input[type=email] {
+    width: 100%;
+    padding: .8rem 1rem;
+    margin: 1rem 0;
+    font-family: 'Poppins', sans-serif;
+    font-size: .9rem;
+    color: #043b24;
+    outline: none;
+    border: none;
+}
+textarea {
+    width: 100%;
+    padding: .8rem 1rem;
+    font-family: 'Poppins', sans-serif;
+    font-size: .9rem;
+    color: #043b24;
+    outline: none;
+    border: none;
+}
+div.btnsend {
+    text-align: center;
+    padding: .8rem;
+    margin: 1rem auto;
+    background-color: #043b24;
+}
+p.send > a {
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: 'Montserrat', sans-serif;
+    font-size: .9rem;
+    color: #ffffff;
+}
+div.text-cont {
+    border: 1px solid rgb(242, 248, 250, .5);
+    margin: 2.5rem 1rem;
+    padding: 1rem;
+}
+p.conta {
+    padding: 1rem;
+    font-family: 'Montserrat', sans-serif;
+    color: #ffffff;
+}
+p.info {
+    color: #f2f8fa;
+    font-size: .8rem;
+    font-family: 'Montserrat', sans-serif;
+}
+.fa-map-marker-alt,
+.fa-phone,
+.fa-envelope {
+    color: #f2f8fa;
+    font-size: 1.2rem;
+    padding: 1rem;
+}
+div.footerlogo {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin: .8rem 1rem;
+    background-image: url(images/INSFC-Logo.jpeg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+p.lorem {
+    color: #f2f8fa;
+    font-size: .8rem;
+    font-family: 'Montserrat', sans-serif;
+    line-height: 25px;
+    padding: 0 1rem;
+}
+p.copyright {
+    color: #f2f8fa;
+    font-size: .7rem;
+    font-family: 'Montserrat', sans-serif;
+    padding: 0 1rem 1rem;
+}
+p.copyright > a {
+    color: #61ebb1;
+    padding: 0 .7rem;
+}
+
+
+
+/*MEDIA QUERRIES*/
+@media (max-width: 768px) {
+    div.aboutus-text {
+        width: 85%;
     }
+    p.sometextz {
+        width: 60%;
+    }
+    div.team-gallery {
+        height: 400px;
+    }
+    div.contact-details {
+        gap: 5px;
+    }
+    form {
+        margin: 2rem;
+    }
+    div.text-cont {
+        margin: 1rem;
+        padding: 0;
+        border: 1px solid rgb(242, 248, 250, .5);
+    }
+    .fa-map-marker-alt, .fa-phone, .fa-envelope {
+        font-size: 1.1rem;
+        padding: .7rem;
+    }
+}
+@media (max-width: 425px) {
+    
     div.nav--links > p {
         margin: 1rem .6rem;
     }
@@ -139,6 +427,57 @@ p.btn-soon > a:hover {
         padding: .7rem .8rem;
         margin-right: .5rem;
         font-size: .8rem;
+    }
+    div.aboutus-text {
+        width: 90%;
+    }
+    h2.about {
+        font-size: 2rem;
+    }
+    p.sometext {
+        padding: 1rem;
+        font-size: .75rem;
+    }
+    h3.values {
+        font-size: 1.55rem;
+    }
+    p.btn-readmore > a {
+        letter-spacing: 2px;
+        font-size: .8rem;
+        padding: .7rem .8rem;
+    }
+    p.sometextz {
+        width: 85%;
+    }
+    div.team-gallery {
+        width: 95%;
+        height: auto;
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+    }
+    div.gallery-pic1,
+    div.gallery-pic2,
+    div.gallery-pic3,
+    div.gallery-pic4,
+    div.gallery-pic5,
+    div.gallery-pic6,
+    div.gallery-pic7,
+    div.gallery-pic8 {
+        height: 250px;
+    }
+    div.contact-details {
+        display: flex;
+        flex-direction: column;
+        gap: 0px;
+    }
+    div.footerlogo {
+        width: 60px;
+        height: 60px;
+        margin: .8rem auto;
+    }
+    p.copyright {
+        text-align: center;
     }
 }
 
