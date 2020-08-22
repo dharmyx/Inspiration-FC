@@ -23,7 +23,7 @@ main {
 }
 
 section#overlay-main {
-    height: 100vh;
+    height: auto;
     background-color: rgb(4, 59, 36, .5);
 }
 
@@ -133,6 +133,7 @@ p.soon {
     font-family: 'Poppins', sans-serif;
     font-size: 2rem;
     font-weight: 300;
+    padding-bottom: .8rem;
     text-align: center;
     color: #ffffff;
     letter-spacing: 2px;
