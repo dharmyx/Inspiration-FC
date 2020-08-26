@@ -172,8 +172,13 @@ p.soon {
     bottom: 10px;
     color: rgb(242, 248, 250);
     font-size: 2.5rem;
+    z-index: 999;
 }
-
+.fa-angle-double-up:hover {
+    transform: rotate(360deg);
+    transition: all .8s ease;
+    cursor: pointer;
+}
 section#aboutus {
     height: auto;
     padding: 3rem 0;
@@ -257,7 +262,7 @@ p.sometextz {
     margin: auto;
     text-align: center;
     padding: 1.5rem 0;
-    font-size: .9rem;
+    font-size: 1.3rem;
     font-family: 'Montserrat', sans-serif;
     line-height: 25px;
 }
@@ -426,8 +431,13 @@ p.info {
 .fa-phone,
 .fa-envelope {
     color: #f2f8fa;
-    font-size: 1.2rem;
+    font-size: 1.1rem;
     padding: 1rem;
+    margin: 7px;
+    width: 50px;
+    height: 50px;
+    border: 1px solid white;
+    border-radius: 50%;
 }
 
 div.footerlogo {
@@ -441,7 +451,7 @@ div.footerlogo {
     background-size: cover;
 }
 
-p.lorem {
+p.passion {
     color: #f2f8fa;
     font-size: .8rem;
     font-family: 'Montserrat', sans-serif;
