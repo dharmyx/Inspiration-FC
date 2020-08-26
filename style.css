@@ -15,7 +15,6 @@ html {
 main {
     height: auto;
     margin: auto;
-    border: 1px solid;
     background-image: url(images/INS_bgedit.jpg);
     background-position: center bottom;
     background-repeat: no-repeat;
