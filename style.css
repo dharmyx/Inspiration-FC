@@ -240,11 +240,30 @@ p.btn-readmore>a:hover {
 }
 
 section#teams {
+    position: relative;
     height: auto;
     padding: 3rem 0;
     background-color: #043b24;
 }
+.custom-shape-divider-top-1598826921 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
 
+.custom-shape-divider-top-1598826921 svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 100px;
+}
+
+.custom-shape-divider-top-1598826921 .shape-fill {
+    fill: #E6F1E5;
+}
 h2.our {
     text-align: center;
     padding: 1rem 0;
