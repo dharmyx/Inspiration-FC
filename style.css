@@ -22,13 +22,12 @@ main {
 }
 
 section#overlay-main {
-    height: auto;
     background-color: rgb(4, 59, 36, .5);
 }
 
 header {
-    width: 100%;
     position: fixed;
+    width: 100%;
     margin: auto;
     display: flex;
     justify-content: center;
@@ -172,6 +171,35 @@ p.soon {
     color: rgb(242, 248, 250);
     font-size: 2.5rem;
     z-index: 999;
+    animation: shake-vertical 2s cubic-bezier(0.455, 0.030, 0.515, 0.955) infinite both;
+}
+@keyframes shake-vertical {
+    0%,
+    100% {
+      -webkit-transform: translateY(0);
+              transform: translateY(0);
+    }
+    10%,
+    30%,
+    50%,
+    70% {
+      -webkit-transform: translateY(-8px);
+              transform: translateY(-8px);
+    }
+    20%,
+    40%,
+    60% {
+      -webkit-transform: translateY(8px);
+              transform: translateY(8px);
+    }
+    80% {
+      -webkit-transform: translateY(6.4px);
+              transform: translateY(6.4px);
+    }
+    90% {
+      -webkit-transform: translateY(-6.4px);
+              transform: translateY(-6.4px);
+    }
 }
 .fa-angle-double-up:hover {
     transform: rotate(360deg);
@@ -182,12 +210,20 @@ section#aboutus {
     height: auto;
     padding: 3rem 0;
     background-color: rgb(207, 227, 203, .5);
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    grid-template-areas: auto;
+    gap: 2rem;
 }
 
-div.aboutus-text {
-    border: 1px dashed;
-    width: 60%;
-    margin: auto;
+div.aboutus-text1 {
+    border: 3px double #004422;
+    margin: auto 0 auto 2rem;
+    padding: 1rem 0;
+}
+div.aboutus-text2 {
+    border: 3px double #004422;
+    margin: auto 2rem auto 0;
     padding: 1rem 0;
 }
 
@@ -258,7 +294,7 @@ section#teams {
     position: relative;
     display: block;
     width: calc(100% + 1.3px);
-    height: 100px;
+    height: 50px;
 }
 
 .custom-shape-divider-top-1598826921 .shape-fill {
@@ -445,6 +481,7 @@ p.info {
     font-family: 'Montserrat', sans-serif;
 }
 
+.fa-whatsapp,
 .fa-map-marker-alt,
 .fa-phone,
 .fa-envelope {
@@ -456,7 +493,7 @@ p.info {
     height: 50px;
     border: 1px solid white;
     border-radius: 50%;
-}
+} 
 
 div.footerlogo {
     width: 80px;
@@ -539,8 +576,8 @@ p.copyright>a {
     }
 
     div.main-logo {
-        width: 120px;
-        height: 120px;
+        width: 100px;
+        height: 100px;
     }
 
     h1.welcome {
@@ -559,9 +596,22 @@ p.copyright>a {
         margin-right: .5rem;
         font-size: .8rem;
     }
-
-    div.aboutus-text {
+    p.soon {
+        font-size: 1.3rem;
+    }
+    .fa-angle-double-up {
+        font-size: 1.9rem;
+        left: 30px;
+        bottom: 30px;
+    }
+    section#aboutus {
+        display: flex;
+        flex-direction: column;
+    }
+    div.aboutus-text1,
+    div.aboutus-text2 {
         width: 90%;
+        margin: auto;
     }
 
     h2.about {
@@ -585,6 +635,9 @@ p.copyright>a {
 
     p.sometextz {
         width: 85%;
+    }
+    h2.our {
+        font-size: 1.7rem;
     }
 
     div.team-gallery {
@@ -610,6 +663,20 @@ p.copyright>a {
         display: flex;
         flex-direction: column;
         gap: 0px;
+    }
+    .fa-map-marker-alt,
+    .fa-phone,
+    .fa-envelope {
+        margin: 10px;
+        width: 40px;
+        height: 40px;
+    }
+    .fa-whatsapp {
+        font-size: 1.5rem;
+        margin: 10px;
+        width: 40px;
+        height: 40px;
+        padding: 8.25px;
     }
 
     div.footerlogo {
@@ -660,5 +727,9 @@ p.copyright>a {
         padding: .6rem .7rem;
         margin-right: .5rem;
         font-size: .8rem;
+    }
+    p.info,
+    p.passion {
+        font-size: .7rem;
     }
 }
