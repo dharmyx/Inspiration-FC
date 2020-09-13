@@ -168,10 +168,10 @@ p.soon {
     position: fixed;
     right: 50px;
     bottom: 10px;
-    color: rgb(242, 248, 250);
+    color: rgb(11,37,28);
     font-size: 2.5rem;
     z-index: 999;
-    animation: shake-vertical 2s cubic-bezier(0.455, 0.030, 0.515, 0.955) infinite both;
+    animation: shake-vertical 4s cubic-bezier(0.455, 0.030, 0.515, 0.955) infinite both;
 }
 @keyframes shake-vertical {
     0%,
@@ -313,7 +313,7 @@ h2.our {
 p.sometextz {
     color: #f2f8fa;
     width: 40%;
-    margin: auto;
+    margin: 1rem auto 2rem;
     text-align: center;
     padding: 1.5rem 0;
     font-size: 1.3rem;
@@ -329,11 +329,12 @@ div.team-gallery {
     grid-template-areas:
         "a b c d"
         "e f g h";
+    gap: 5px;
 }
 
 div.gallery-pic1 {
     grid-area: a;
-    background-image: url(images/bg-07.jpg);
+    background-image: url(images/gBG5.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -341,7 +342,7 @@ div.gallery-pic1 {
 
 div.gallery-pic2 {
     grid-area: b;
-    background-image: url(images/bg-01.jpg);
+    background-image: url(images/gBG7.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -349,7 +350,7 @@ div.gallery-pic2 {
 
 div.gallery-pic3 {
     grid-area: c;
-    background-image: url(images/header-bg.jpg);
+    background-image: url(images/gBG1.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -357,7 +358,7 @@ div.gallery-pic3 {
 
 div.gallery-pic4 {
     grid-area: d;
-    background-image: url(images/bg-06.jpg);
+    background-image: url(images/gBG4.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -373,7 +374,7 @@ div.gallery-pic5 {
 
 div.gallery-pic6 {
     grid-area: f;
-    background-image: url(images/bg-02.jpg);
+    background-image: url(images/gBG9.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -381,7 +382,7 @@ div.gallery-pic6 {
 
 div.gallery-pic7 {
     grid-area: g;
-    background-image: url(images/bg-04.jpg);
+    background-image: url(images/bg-05.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -389,7 +390,7 @@ div.gallery-pic7 {
 
 div.gallery-pic8 {
     grid-area: h;
-    background-image: url(images/bg-05.jpg);
+    background-image: url(images/gBG10.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -635,6 +636,7 @@ p.copyright>a {
 
     p.sometextz {
         width: 85%;
+        margin: 1rem auto 1rem;
     }
     h2.our {
         font-size: 1.7rem;
