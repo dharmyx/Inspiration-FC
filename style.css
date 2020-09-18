@@ -164,6 +164,35 @@ p.soon {
     }
 }
 
+#clockdiv{
+    font-family: 'Montserrat', sans-serif;
+    color: #fff;
+    display: inline-block;
+    font-weight: 100;
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+#clockdiv > div{
+    margin: 20px 0;
+    padding: 10px;
+    border-radius: 10px;
+    background: #015f30;
+    display: inline-block;
+}
+
+#clockdiv div > span{
+    padding: 15px;
+    border-radius: 50%;
+    background: #004422;
+    display: inline-block;
+}
+
+.smalltext{
+    padding-top: 5px;
+    font-size: .85rem;
+}
+
 .fa-angle-double-up {
     position: fixed;
     right: 50px;
@@ -396,6 +425,99 @@ div.gallery-pic8 {
     background-size: cover;
 }
 
+section#kingofmatch {
+    height: auto;
+    padding: 3rem auto;
+    background-color: #d0e9cb;
+    border: 1px solid white;
+}
+h2.komtext {
+    text-align: center;
+    padding: 1rem 0;
+    font-size: 2rem;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    text-transform: uppercase;
+    color: #004422;
+}
+div.kingofmatch {
+    width: 75%;
+    margin: 4rem auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(auto);
+    grid-template-areas: "a b";
+    gap: 3rem;
+    height: 450px;
+}
+div.komicon {
+    grid-area: a;
+    border: 10px double #d0e9cb;
+    position: relative;
+    background-color: #004422;
+}
+.fa-crown {
+    color: #d0e9cb;
+    font-size: 4rem;
+    position: absolute;
+    top: 2.5rem;
+    left: 11rem;
+}
+div.kingofmatchframe1 {
+    width: 60%;
+    height: 260px;
+    border: 5px double #d0e9cb;
+    position: relative;
+    top: 7rem;
+    left: 5rem;
+}
+div.kingofmatchframe2 {
+    width: 103%;
+    height: 260px;
+    border: 5px double #d0e9cb;
+    position: relative;
+    top: 1rem;
+    left: 1rem;
+}
+div.kingofmatchpicx {
+    width: 70%;
+    height: 170px;
+    border: 2px double #d0e9cb;
+    position: absolute;
+    top: 1.9rem;
+    left: 1.7rem;
+    border-radius: 50%;
+    background-image: url(images/whois.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+div.kingofmatchdetails {
+    grid-area: b;
+    border: 10px double #d0e9cb;
+    background-color: #004422;
+}
+div.komdetails {
+    width: 85%;
+    margin: 3rem auto;
+}
+h2.komheading {
+    padding: 1rem 0;
+    font-size: 1.7rem;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #d0e9cb;
+}
+p.komtext {
+    font-size: .85rem;
+    font-family: 'Poppins', sans-serif;
+    color: #d0e9cb;
+    line-height: 2;
+}
+b {
+    font-size: 1.2rem;
+}
 section#contact {
     height: auto;
     background-color: #043b24;
@@ -542,7 +664,42 @@ p.copyright>a {
     div.team-gallery {
         height: 400px;
     }
-
+    div.kingofmatch {
+        width: 90%;
+        margin: 2rem auto 5rem;
+        gap: 1rem;
+        height: auto;
+    }
+    .fa-crown {
+        color: #d0e9cb;
+        font-size: 3.2rem;
+        position: absolute;
+        left: 8rem;
+    }
+    div.kingofmatchframe1 {
+        width: 60%;
+        height: 200px;
+        left: 3.5rem;
+    }
+    div.kingofmatchframe2 {
+        width: 103%;
+        height: 200px;
+        left: 1rem;
+    }
+    div.kingofmatchpicx {
+        width: 130px;
+        height: 130px;
+        top: 1rem;
+        left: .8rem;
+    }
+    h2.komheading {
+        font-size: 1.5rem;
+        padding: .7rem 0;
+    }
+    p.komtext {
+        font-size: .75rem;
+        line-height: 1.7;
+    }
     div.contact-details {
         gap: 5px;
     }
@@ -651,16 +808,45 @@ p.copyright>a {
     }
 
     div.gallery-pic1,
-    div.gallery-pic2,
+    /*div.gallery-pic2,*/
     div.gallery-pic3,
-    div.gallery-pic4,
+    /*div.gallery-pic4,*/
     div.gallery-pic5,
     div.gallery-pic6,
-    div.gallery-pic7,
+    /*div.gallery-pic7,*/
     div.gallery-pic8 {
         height: 250px;
     }
-
+    div.gallery-pic2,
+    div.gallery-pic4,
+    div.gallery-pic7 {
+        display: block;
+    }
+    div.kingofmatch {
+        display: flex;
+        flex-direction: column;
+    }
+    div.komicon {
+        height: 75vh;
+    }
+    .fa-crown {
+        color: #d0e9cb;
+        font-size: 4rem;
+        position: absolute;
+        top: 2rem;
+        left: 9rem;
+    }
+    div.kingofmatchframe1 {
+        left: 4rem;
+    }
+    div.kingofmatchpicx {
+        top: 1.2rem;
+        left: 1.8rem;
+    }
+    h2.komheading {
+        text-align: center;
+        padding: 1rem 0;
+    }
     div.contact-details {
         display: flex;
         flex-direction: column;
@@ -695,6 +881,21 @@ p.copyright>a {
 @media (max-width: 375px) {
     h1.welcome {
         font-size: 1.8rem;
+    }
+    .fa-crown {
+        font-size: 3rem;
+        left: 8rem;
+    }
+    div.kingofmatchframe1 {
+        left: 3.5rem;
+    }
+    div.kingofmatchpicx {
+        top: 1.2rem;
+        left: .9rem;
+    }
+    h2.komheading {
+        text-align: center;
+        padding: 1rem 0;
     }
 }
 
@@ -733,5 +934,22 @@ p.copyright>a {
     p.info,
     p.passion {
         font-size: .7rem;
+    }
+    .fa-crown {
+        left: 6.5rem;
+    }
+    div.kingofmatchframe1 {
+        width: 205px;
+        left: 1.4rem;
+    }
+    div.kingofmatchpicx {
+        left: 1.4rem;
+    }
+    h2.komheading {
+        text-align: center;
+        padding: 1rem 0;
+    }
+    b {
+        font-size: 1rem;
     }
 }
