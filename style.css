@@ -195,8 +195,8 @@ p.soon {
 
 .fa-angle-double-up {
     position: fixed;
-    right: 50px;
-    bottom: 10px;
+    right: 100px;
+    bottom: 30px;
     color: rgb(11,37,28);
     font-size: 2.5rem;
     z-index: 999;
@@ -462,7 +462,20 @@ div.komicon {
     position: absolute;
     top: 2.5rem;
     left: 11rem;
+    animation: rotate-scale-up-ver 1s linear 1s 5 both;
 }
+@keyframes rotate-scale-up-ver {
+    0% {
+        transform: scale(1) rotateY(0);
+    }
+    50% {
+        transform: scale(2) rotateY(180deg);
+    }
+    100% {
+        transform: scale(1) rotateY(360deg);
+    }
+}
+
 div.kingofmatchframe1 {
     width: 60%;
     height: 260px;
@@ -487,7 +500,7 @@ div.kingofmatchpicx {
     top: 1.9rem;
     left: 1.7rem;
     border-radius: 50%;
-    background-image: url(images/whois.jpg);
+    background-image: url(images/johnOgah.jpeg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -587,7 +600,7 @@ p.send>a {
 }
 
 div.text-cont {
-    border: 1px solid rgb(242, 248, 250, .5);
+    border: 5px double rgb(242, 248, 250, .5);
     margin: 2.5rem 1rem;
     padding: 1rem;
 }
@@ -711,7 +724,7 @@ p.copyright>a {
     div.text-cont {
         margin: 1rem;
         padding: 0;
-        border: 1px solid rgb(242, 248, 250, .5);
+        border: 5px double rgb(242, 248, 250, .5);
     }
 
     .fa-map-marker-alt,
@@ -759,7 +772,8 @@ p.copyright>a {
     }
     .fa-angle-double-up {
         font-size: 1.9rem;
-        left: 30px;
+        right: 0;
+        left: -350px;
         bottom: 30px;
     }
     section#aboutus {
@@ -897,6 +911,12 @@ p.copyright>a {
         text-align: center;
         padding: 1rem 0;
     }
+    p.passion {
+        font-size: .7rem;
+    }
+    .fa-angle-double-up {
+        left: -300px;
+    }
 }
 
 @media (max-width: 320px) {
@@ -951,5 +971,12 @@ p.copyright>a {
     }
     b {
         font-size: 1rem;
+    }
+    .fa-angle-double-up {
+        left: -250px;
+    }
+    #clockdiv > div {
+        margin: 20px 0;
+        padding: 5px;
     }
 }
