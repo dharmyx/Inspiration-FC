@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;600;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Mulish:wght@300;400;500;600;700;800;900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&display=swap');
 
@@ -47,7 +47,7 @@ div.nav--links>p>a {
     color: #f2f8fa;
     text-decoration: none;
     text-transform: uppercase;
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Raleway', sans-serif;
     letter-spacing: 2px;
     font-size: .85rem;
 }
@@ -70,7 +70,7 @@ div.main-logo {
 }
 
 h1.welcome {
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Raleway', sans-serif;
     padding: 1rem 0;
     font-size: 2.4rem;
     font-weight: 600;
@@ -79,7 +79,7 @@ h1.welcome {
 }
 
 p.bring {
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Montserrat', sans-serif;
     font-size: 1rem;
     font-weight: 300;
     text-align: center;
@@ -128,7 +128,7 @@ div.coming-soon {
 }
 
 p.soon {
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Raleway', sans-serif;
     font-size: 2rem;
     font-weight: 300;
     padding-bottom: .8rem;
@@ -198,7 +198,7 @@ p.soon {
     right: 100px;
     bottom: 30px;
     color: rgb(11,37,28);
-    font-size: 2.5rem;
+    font-size: 2rem;
     z-index: 999;
     animation: shake-vertical 4s cubic-bezier(0.455, 0.030, 0.515, 0.955) infinite both;
 }
@@ -237,7 +237,7 @@ p.soon {
 }
 section#aboutus {
     height: auto;
-    padding: 3rem 0;
+    padding: 4rem 0;
     background-color: rgb(207, 227, 203, .5);
     display: grid;
     grid-template-columns: repeat(2, auto);
@@ -291,7 +291,7 @@ p.btn-readmore>a {
     color: #000000;
     text-decoration: none;
     text-transform: uppercase;
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Raleway', sans-serif;
     letter-spacing: 4px;
     border: 2px solid #000000;
     padding: .7rem 1rem;
@@ -307,7 +307,7 @@ p.btn-readmore>a:hover {
 section#teams {
     position: relative;
     height: auto;
-    padding: 3rem 0;
+    padding: 4rem 0 5rem 0;
     background-color: #043b24;
 }
 .custom-shape-divider-top-1598826921 {
@@ -371,7 +371,7 @@ div.gallery-pic1 {
 
 div.gallery-pic2 {
     grid-area: b;
-    background-image: url(images/gBG7.jpg);
+    background-image: url(images/Fire-FC.webp);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -379,7 +379,7 @@ div.gallery-pic2 {
 
 div.gallery-pic3 {
     grid-area: c;
-    background-image: url(images/gBG1.jpg);
+    background-image: url(images/SuperStarz-FC.webp);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -387,23 +387,23 @@ div.gallery-pic3 {
 
 div.gallery-pic4 {
     grid-area: d;
-    background-image: url(images/gBG4.jpg);
-    background-position: center;
+    background-image: url(images/DiamondGreen-FC.webp);
+    background-position: top center;
     background-repeat: no-repeat;
     background-size: cover;
 }
 
 div.gallery-pic5 {
     grid-area: e;
-    background-image: url(images/bg-03.jpeg);
-    background-position: center;
+    background-image: url(images/DreamTeam-FC.webp);
+    background-position: top center;
     background-repeat: no-repeat;
     background-size: cover;
 }
 
 div.gallery-pic6 {
     grid-area: f;
-    background-image: url(images/gBG9.jpg);
+    background-image: url(images/HollyWood-FC.webp);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -411,7 +411,7 @@ div.gallery-pic6 {
 
 div.gallery-pic7 {
     grid-area: g;
-    background-image: url(images/bg-05.jpg);
+    background-image: url(images/LesBlues-FC.webp);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -433,7 +433,7 @@ section#kingofmatch {
 }
 h2.komtext {
     text-align: center;
-    padding: 1rem 0;
+    padding: 3rem 0 1rem 0;
     font-size: 2rem;
     font-family: 'Montserrat', sans-serif;
     font-weight: 500;
@@ -500,7 +500,7 @@ div.kingofmatchpicx {
     top: 1.9rem;
     left: 1.7rem;
     border-radius: 50%;
-    background-image: url(images/johnOgah.jpeg);
+    background-image: url(images/Kossi.webp);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -534,6 +534,7 @@ b {
 section#contact {
     height: auto;
     background-color: #043b24;
+    padding: 5rem 0 3rem;
 }
 
 div.contact-details {
@@ -846,20 +847,26 @@ footer#footer-bar {
         flex-direction: column;
     }
 
-    div.gallery-pic1,
-    /*div.gallery-pic2,*/
+    /*div.gallery-pic1,*/
+    div.gallery-pic2,
     div.gallery-pic3,
-    /*div.gallery-pic4,*/
+    div.gallery-pic4,
     div.gallery-pic5,
     div.gallery-pic6,
-    /*div.gallery-pic7,*/
-    div.gallery-pic8 {
+    div.gallery-pic7
+    /*div.gallery-pic8*/ {
         height: 250px;
     }
+    
     div.gallery-pic2,
     div.gallery-pic4,
     div.gallery-pic7 {
         display: block;
+    }
+    div.gallery-pic3,
+    div.gallery-pic6,
+    div.gallery-pic7 {
+        background-position: top center;
     }
     div.kingofmatch {
         display: flex;
@@ -907,6 +914,12 @@ footer#footer-bar {
         padding: 8.25px;
     }
     */
+    div.social-icons {
+        justify-content: center;
+    }
+    p.passion {
+        text-align: center;
+    }
     div.footerlogo {
         width: 60px;
         height: 60px;
