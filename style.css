@@ -601,7 +601,7 @@ p.send>a {
 
 div.text-cont {
     border: 5px double rgb(242, 248, 250, .5);
-    margin: 2.5rem 1rem;
+    margin: 2rem 1rem;
     padding: 1rem;
 }
 
@@ -616,21 +616,25 @@ p.info {
     font-size: .8rem;
     font-family: 'Montserrat', sans-serif;
 }
-
+.fa-twitter,
+.fa-instagram,
 .fa-whatsapp,
 .fa-map-marker-alt,
 .fa-phone,
 .fa-envelope {
     color: #f2f8fa;
-    font-size: 1.1rem;
-    padding: 1rem;
+    font-size: 1.3rem;
+    padding: .89rem;
     margin: 7px;
     width: 50px;
     height: 50px;
-    border: 1px solid white;
+    border: 2px solid white;
     border-radius: 50%;
 } 
 
+div.social-icons {
+    display: flex;
+}
 div.footerlogo {
     width: 80px;
     height: 80px;
@@ -650,18 +654,27 @@ p.passion {
     padding: 0 1rem;
 }
 
-p.copyright {
-    color: #f2f8fa;
-    font-size: .7rem;
+p.copyright,
+p.copyright-text {
+    color: #141414;
+    font-size: .9rem;
     font-family: 'Montserrat', sans-serif;
     padding: 0 1rem 1rem;
+    font-weight: 600;
+    cursor: pointer;
 }
 
 p.copyright>a {
-    color: #61ebb1;
+    color: #093322;
     padding: 0 .7rem;
 }
 
+footer#footer-bar {
+    display: flex;
+    justify-content: space-between;
+    padding: 3rem 2rem;
+    background-color: rgb(207, 227, 203, .7);
+}
 
 
 /*MEDIA QUERRIES*/
@@ -727,11 +740,23 @@ p.copyright>a {
         border: 5px double rgb(242, 248, 250, .5);
     }
 
-    .fa-map-marker-alt,
+    /*.fa-map-marker-alt,
     .fa-phone,
     .fa-envelope {
         font-size: 1.1rem;
         padding: .7rem;
+    }*/
+
+    p.copyright,
+    p.copyright-text {
+        font-size: .75rem;
+}
+
+    footer#footer-bar {
+        display: flex;
+        justify-content: space-between;
+        padding: 2rem;
+        background-color: rgb(207, 227, 203, .7);
     }
 }
 
@@ -866,6 +891,7 @@ p.copyright>a {
         flex-direction: column;
         gap: 0px;
     }
+    /*
     .fa-map-marker-alt,
     .fa-phone,
     .fa-envelope {
@@ -880,7 +906,7 @@ p.copyright>a {
         height: 40px;
         padding: 8.25px;
     }
-
+    */
     div.footerlogo {
         width: 60px;
         height: 60px;
@@ -888,6 +914,13 @@ p.copyright>a {
     }
 
     p.copyright {
+        text-align: center;
+    }
+    footer#footer-bar {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 2rem 0;
         text-align: center;
     }
 }
