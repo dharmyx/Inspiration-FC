@@ -16,13 +16,47 @@ main {
     height: auto;
     margin: auto;
     background-image: url(images/INS_bgedit.jpg);
+    background-attachment: fixed;
     background-position: center bottom;
     background-repeat: no-repeat;
     background-size: cover;
+   /* -webkit-animation: kenburns-bottom 10s ease-in infinite both;
+            animation: kenburns-bottom 10s ease-in infinite both;
+            */
 }
+/*
+@-webkit-keyframes kenburns-bottom {
+    0% {
+      -webkit-transform: scale(1) translateY(0);
+              transform: scale(1) translateY(0);
+      -webkit-transform-origin: 50% 84%;
+              transform-origin: 50% 84%;
+    }
+    100% {
+      -webkit-transform: scale(1.25) translateY(15px);
+              transform: scale(1.25) translateY(15px);
+      -webkit-transform-origin: bottom;
+              transform-origin: bottom;
+    }
+  }
+  @keyframes kenburns-bottom {
+    0% {
+      -webkit-transform: scale(1) translateY(0);
+              transform: scale(1) translateY(0);
+      -webkit-transform-origin: 50% 84%;
+              transform-origin: 50% 84%;
+    }
+    100% {
+      -webkit-transform: scale(1.25) translateY(15px);
+              transform: scale(1.25) translateY(15px);
+      -webkit-transform-origin: bottom;
+              transform-origin: bottom;
+    }
+  }
+  */
 
 section#overlay-main {
-    background-color: rgb(4, 59, 36, .5);
+    background-color: rgb(4, 59, 36, .3);
 }
 
 header {
@@ -303,11 +337,16 @@ p.btn-readmore>a:hover {
     background-color: #043b24;
     transition: all .8s ease;
 }
-
+section#guidelines {
+    position: relative;
+    height: auto;
+    padding: 5rem 0;
+    background-color: #043b24;
+}
 section#teams {
     position: relative;
     height: auto;
-    padding: 4rem 0 5rem 0;
+    padding: 0 0 5rem 0;
     background-color: #043b24;
 }
 .custom-shape-divider-top-1598826921 {
@@ -500,7 +539,7 @@ div.kingofmatchpicx {
     top: 1.9rem;
     left: 1.7rem;
     border-radius: 50%;
-    background-image: url(images/Kossi.webp);
+    background-image: url(images/fincy.webp);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
