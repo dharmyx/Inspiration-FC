@@ -802,6 +802,10 @@ footer#footer-bar {
 
 @media (max-width: 425px) {
 
+    main {
+        background-attachment: none;
+    }
+
     div.nav--links>p {
         margin: 1rem .6rem;
     }
