@@ -17,7 +17,7 @@ main {
     margin: auto;
     background-image: url(images/INS_bgedit.jpg);
     background-attachment: fixed;
-    background-position: center bottom;
+    background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
    /* -webkit-animation: kenburns-bottom 10s ease-in infinite both;
