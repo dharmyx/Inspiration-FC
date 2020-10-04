@@ -16,7 +16,6 @@ main {
     height: auto;
     margin: auto;
     background-image: url(images/INS_bgedit.jpg);
-    background-attachment: fixed;
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -802,9 +801,7 @@ footer#footer-bar {
 
 @media (max-width: 425px) {
 
-    main {
-        background-attachment: none;
-    }
+   
 
     div.nav--links>p {
         margin: 1rem .6rem;
